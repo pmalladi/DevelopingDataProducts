@@ -10,9 +10,8 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for the population range selection
   sidebarLayout(
     sidebarPanel(
-      #textInput("The below maps are rendered from [R] Maps package", label = h3("Text Input")),
       sliderInput("populationRank",
-                  paste("Select a Rank to get the country name and map (Not to Scale). ______________ The below maps are rendered using [R] Maps Package"),
+                  paste("To use the app, select a country by it's rank by using the below slider. \n The country name and it's map are displayed as a result. \n The below maps (not to scale) are rendered using 'Maps' package"),
                   min = 1,
                   max = 40,
                   value = 1,
