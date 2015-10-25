@@ -21,7 +21,7 @@ shinyUI(fluidPage(
     ),
     
     mainPanel(
-      textOutput("country"),
+      h1(textOutput("country")),
       plotOutput("map")
     )
   )
